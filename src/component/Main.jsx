@@ -1,7 +1,7 @@
-const Main = () => {
+const Main = ({data}) => {
   return (
     <div className="imgContainer">
-        <img src="mars.png" alt="mars-demo-picture" className="bgImage"/>
+        <img src="mars.png" alt={data.title || 'bg-img'} className="bgImage"/>
     </div>
   )
 }
